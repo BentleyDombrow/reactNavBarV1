@@ -1,0 +1,19 @@
+.ContactNavItemContainer {
+
+    height:fit-content;
+
+}
+
+.ContactNavItem{
+
+    padding: 10px;
+    border: 2px black solid;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+}
+
+.ContactNavItem:hover{
+
+    background-color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,39 @@
+.MyNavBarContainer {
+
+    height: 70px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NavItems{
+
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.NavItemsList{
+
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    list-style-type: none;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+}
+
+.NavItem{
+    padding: 0px 5px;
+    cursor:pointer;
+}
+/* 
+.NavItem:hover{
+    cursor: pointer;
+} */
