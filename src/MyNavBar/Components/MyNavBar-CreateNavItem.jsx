@@ -4,8 +4,8 @@ const CreateNavItem = props => {
 
     return(
         <>
-              <li className={"NavItem " + props.itemName}>
-                    <a className='NavItem NavItemHome'>{props.itemName}</a>
+              <li className={"NavItemLi " + props.itemName}>
+                    <a className='NavItemA'>{props.itemName}</a>
                 </li>
         </>
     );

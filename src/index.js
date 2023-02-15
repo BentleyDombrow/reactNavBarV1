@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import NavBar from './Navbar';
+
 import MyNavBar from './MyNavBar/MyNavBar'
+import './index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <MyNavBar />
-  </React.StrictMode>
+    <>
+      <div className='bodyContainer'>
+        <MyNavBar />
+      </div>
+    
+    </>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

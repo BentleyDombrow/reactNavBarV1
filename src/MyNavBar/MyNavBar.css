@@ -1,24 +1,23 @@
 .MyNavBarContainer {
-
     height: 70px;
-    background-color: aqua;
+    background-color: #2f3640;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    color: white;
 }
 
 .NavItems{
-
     display: flex;
-    width: 50%;
-    justify-content: space-around;
+    width: 40%;
+    justify-content: space-between;
     align-items: center;
     padding: 0px;
     font-family: sans-serif;
+    min-width: fit-content;
 }
 
 .NavItemsList{
-
     display: flex;
     width: 70%;
     justify-content: space-around;
@@ -29,11 +28,46 @@
     font-family: sans-serif;
 }
 
-.NavItem{
-    padding: 0px 5px;
-    cursor:pointer;
-}
-/* 
-.NavItem:hover{
+.NavItemLi {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    padding: 5px 0px;
     cursor: pointer;
-} */
+    transition: 250ms;
+  }
+  
+  .NavItemLi:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    background-color: #7b91ff;
+    transition: 250ms;
+  }
+
+  .NavItemLi:hover {
+    transform: translateY(-2px);
+    transition: 250ms;
+  }
+  
+  .NavItemLi:hover:after {
+    width: 100%;
+    transition: 250ms;
+  }
+
+@media (max-width: 800px) {
+  .NavItemsList {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .ContactNavItemContainer {
+    display: none;
+  }
+}

@@ -1,19 +1,28 @@
 .ContactNavItemContainer {
-
-    height:fit-content;
-
+    height: fit-content;
+    transition: 250ms;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.ContactNavItem{
+.ContactNavItemContainer:hover {
+    transform: translateY(-3px);
+    transition: 250ms;
+}
 
+.ContactNavItem {
     padding: 10px;
-    border: 2px black solid;
+    border: 2px #7b91ff solid;
     font-family: sans-serif;
     font-size: 1.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: translateY(0px);
+    transition: 250ms;
+    white-space: nowrap;
 }
 
-.ContactNavItem:hover{
-
-    background-color: white;
-    cursor: pointer;
+.ContactNavItem:hover {
+    background-color: #7b91ff;
+    transition: 250ms;
 }
